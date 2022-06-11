@@ -6,3 +6,7 @@
 	border: 3px outset blue;
 	/*display: none !important;*/
 }
+h1 {
+	display: flex;
+	justify-content: left;
+}
