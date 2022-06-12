@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <div class="container-md">
+  <div class="container-lg">
     <div class="lite-header mb-3">
       <span>
         <h1>Введите характеристики</h1>
@@ -95,7 +95,7 @@
             <option value="2">Начальное</option>
             <option value="3" selected>Основное общее</option>
             <option value="4">Основное специальное</option>
-            <option value="4">Высшее</option>
+            <option value="5">Высшее</option>
           </select>
         </div>
 
@@ -107,6 +107,17 @@
         <div class="input-group mt-2">
           <label class="input-group-text" id="basic-addon1">Годовой доход</label>
           <input type="text" class="form-control" value="0" placeholder="0" aria-label="Annual Income" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mt-2">
+          <label class="input-group-text" id="basic-addon1">Зарплата</label>
+          <input type="text" class="form-control" id="SalaryInput" value="0" placeholder="0" aria-label="Annual Income" aria-describedby="basic-addon1" onchange="updateTextInput2(this.value);">
+        </div>
+
+        <div class="SalaryInput mt-1">
+          <text>0</text>
+          <input type="range" class="form-range" id="SalaryInput2" min="0" max="200" onchange="updateTextInput(this.value);">
+          <text>200</text>
         </div>
       </div>
     </div>
@@ -123,5 +134,7 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
 </html>
