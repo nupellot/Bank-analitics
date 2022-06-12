@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Open+Sans:wght@800&family=Roboto+Mono:wght@700&display=swap');
 
-.col-6 {
-	border:  1px solid red;
-}
 .btn-outline-primary {
 	width: 50%;
 	border: 3px outset blue;
@@ -36,4 +33,17 @@ h3 {
 	font-size: 40px;
 	font-family: 'Roboto Mono', monospace;
 	text-shadow: black 10px 0 10px;
+}
+.main-file-input {
+	border: 4px outset gray;
+	background-color: #0d6efd;
+	border-radius: 50px;
+	color: white;
+}
+.lite-header {
+	width: 100%;
+	/*border: 1px solid red;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }

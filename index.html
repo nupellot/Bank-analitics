@@ -11,27 +11,26 @@
 <body>
 
   <div class="container-lg">
-    <div class="row mb-3">
-      <div class="col">
-        <h1>Характеристики клиента</h1>
-      </div>
-      
-      <div class="col-8">
-        <div class="characteristic row">
-          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="sex" id="btnradio1" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="btnradio1">Мужчина</label>
-
-            <input type="radio" class="btn-check" name="sex" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio2">Женщина</label>
-          </div>
-        </div>
-      </div>
+    <div class="lite-header mb-3">
+      <span>
+        <h1>Введите характеристики</h1>
+      </span>
+      <span>
+        <input class="form-control main-file-input" id="formFileLg" type="file">
+      </span>
     </div>
+
 
 
     <div class="row">
       <div class="col-4">
+        <div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="sex" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="btnradio1">Мужчина</label>
+
+          <input type="radio" class="btn-check" name="sex" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio2">Женщина</label>
+        </div>
         <h3>Обладает:</h3>
         <div class="form-check mt-2">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -64,20 +63,13 @@
         <div class="form-check mt-2">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
           <label class="form-check-label" for="flexCheckDefault">
-            Семья
-          </label>
-        </div>
-
-        <div class="form-check mt-2">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">
             Машина
           </label>
         </div>
       </div>
 
-      <div class="col">
-        <div class="input-group mt-2">
+      <div class="col-8">
+        <div class="input-group">
           <label class="input-group-text" for="inputGroupSelect01">Семейный статус</label>
           <select class="form-select" id="inputGroupSelect01">
             <option selected>Холост / Не замужем</option>
