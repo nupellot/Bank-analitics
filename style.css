@@ -13,3 +13,6 @@ h1 {
 h3 {
 	font-size: 17px;
 }
+.input-group label {
+	width: 27%;
+}
