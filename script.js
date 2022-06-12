@@ -83,7 +83,18 @@ let myChart = new Chart(ctx, {
             borderWidth: 4
         }]
     },
-    options: {},
+    options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: 'Отношение популярности баклажанов к помидорам'
+          }
+        }
+    },
 })
 
 
