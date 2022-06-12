@@ -146,7 +146,7 @@
 
         <div class="input-group mt-2">
           <label for="city-choice" class="input-group-text">Город</label>
-          <input list="cities-datalist" class="form-control" id="city-choice" name="city-choice"/>
+          <input list="cities-datalist" placeholder="Николо-Березовка" class="form-control" id="city-choice" name="city-choice"/>
           <datalist id="cities-datalist">
           </datalist>
         </div>
@@ -155,7 +155,7 @@
     </div>
 
     <div class="row Analize mt-4">
-      <button type="button" class="btn btn-primary btn-lg">Analize</button>
+      <button type="button" onclick="spawnChart()" class="btn btn-primary btn-lg pressed">Analize</button>
     </div>
 
 <!--     <div class="row">
@@ -164,8 +164,8 @@
       </div>
     </div> -->
 
-    <div class="row mt-3">
-      <canvas class="firstGraph"></canvas>
+    <div class="row mt-3 placeForCharts">
+      <!-- <canvas class="firstGraph"></canvas> -->
     </div>
   </div>
 

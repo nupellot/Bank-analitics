@@ -53,6 +53,8 @@ h3 {
 	align-items: center;
 }
 
+
+
 #SalaryInput {
 	/*border: none;*/
 }
@@ -79,6 +81,9 @@ div.SalaryInput span {
 .Analize button {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
+}
+.Analize button.pressed {
+	background-color: gray;
 }
 hr {
 	/*height: 5px;*/

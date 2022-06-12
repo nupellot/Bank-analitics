@@ -37,64 +37,78 @@ let cities = ['Гусь-Хрустальный', 'Ишимбай', 'Юрга', '
        'Агидель', 'Березники', 'Янгантау', 'Ангарск', 'Николо-Березовка']
 
 
-
-for (let i = 0; i < cities.length; i++) {
-    let element = document.createElement('option');
-    element.value = cities[i];
-    document.getElementById('cities-datalist').append(element);
+function extendDatalist() {
+    for (let i = 0; i < cities.length; i++) {
+        let element = document.createElement('option');
+        element.value = cities[i];
+        document.getElementById('cities-datalist').append(element);
+    }
 }
+extendDatalist();
 
-let ctx = document.querySelector('.firstGraph').getContext('2d');
-let myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: [0, 1, 2, 3, 4, 5],  // Значения по x
-        datasets: [{
-            label: 'Помидоры',
-            data: [20, 50, 42, 28, 77, 22],
-            backgroundColor: [
-                'white'
-            ],
-            borderColor: [
-                'red'
-            ],
-            borderWidth: 4
-        },
-        {
-            label: 'Баклажаны',
-            data: [7, 90, 21, 3, 24, 47],
-            backgroundColor: [
-                'white'
-            ],
-            borderColor: [
-                'blue'
-            ],
-            borderWidth: 4
-        },
-        {
-            label: 'Огурцы',
-            data: [39, 33, 36, 29, 65, 88],
-            backgroundColor: [
-                'white'
-            ],
-            borderColor: [
-                'green'
-            ],
-            borderWidth: 4
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            position: 'top',
-          },
-          title: {
-            display: true,
-            text: 'Отношение популярности баклажанов к помидорам'
-          }
-        }
-    },
-})
+let calculated = false;
 
+
+function spawnChart() {
+    if (calculated == true) return;
+    calculated = true;
+    let ctx = document.createElement('canvas');
+    ctx.classList.add("firstChart");
+    document.querySelector('.placeForCharts').append(ctx);
+
+    let myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [0, 1, 2, 3, 4, 5],  // Значения по x
+            datasets: [{
+                label: 'Помидоры',
+                data: [20, 50, 42, 28, 77, 22],
+                backgroundColor: [
+                    'white'
+                ],
+                borderColor: [
+                    'red'
+                ],
+                borderWidth: 4
+            },
+            {
+                label: 'Баклажаны',
+                data: [7, 90, 21, 3, 24, 47],
+                backgroundColor: [
+                    'white'
+                ],
+                borderColor: [
+                    'blue'
+                ],
+                borderWidth: 4
+            },
+            {
+                label: 'Огурцы',
+                data: [39, 33, 36, 29, 65, 88],
+                backgroundColor: [
+                    'white'
+                ],
+                borderColor: [
+                    'green'
+                ],
+                borderWidth: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'top',
+              },
+              title: {
+                display: true,
+                text: 'Отношение популярности баклажанов к помидорам'
+              }
+            }
+        },
+    })
+}
+// let ctx = document.querySelector('.firstGraph').getContext('2d');
+
+// spawnChart();
 
