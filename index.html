@@ -31,72 +31,61 @@
           <input type="radio" class="btn-check" name="sex" id="btnradio2" autocomplete="off">
           <label class="btn btn-outline-primary" for="btnradio2">Женщина</label>
         </div>
-        <h3>Обладает:</h3>
+        <hr>
         <div class="form-check mt-2">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
           <label class="form-check-label" for="flexCheckDefault">
-            Недвижимость
+            Имеет недвижимость
           </label>
         </div>
 
         <div class="form-check mt-2">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
           <label class="form-check-label" for="flexCheckDefault">
-            Личный телефон
+            Указал личный телефон
           </label>
         </div>
 
         <div class="form-check mt-2">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
           <label class="form-check-label" for="flexCheckDefault">
-            Рабочий телефон
+            Указал рабочий телефон
           </label>
         </div>
 
         <div class="form-check mt-2">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
           <label class="form-check-label" for="flexCheckDefault">
-            Электронная почта
+            Указал электронную почту
           </label>
         </div>
 
         <div class="form-check mt-2">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
           <label class="form-check-label" for="flexCheckDefault">
-            Машина
+            Трудоустроен
+          </label>
+        </div>
+
+        <div class="form-check mt-2">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Имеет автомобиль
+          </label>
+        </div>
+
+        <div class="form-check mt-2">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Пенсионер
           </label>
         </div>
       </div>
 
       <div class="col-8">
         <div class="input-group">
-          <label class="input-group-text" for="inputGroupSelect01">Семейный статус</label>
-          <select class="form-select" id="inputGroupSelect01">
-            <option selected>Холост / Не замужем</option>
-            <option value="1">В браке</option>
-            <option value="2">Разведен(а)</option>
-          </select>
-        </div>
-
-        <div class="input-group mt-2">
-          <label class="input-group-text" for="inputGroupSelect01">Категория дохода</label>
-          <select class="form-select" id="inputGroupSelect01">
-            <option selected>Зарплата</option>
-            <option value="1">Дивиденды</option>
-            <option value="2">Взятки</option>
-            <option value="2">Что-то ещё</option>
-          </select>
-        </div>
-
-        <div class="input-group mt-2">
-          <label class="input-group-text" for="inputGroupSelect01">Уровень образования</label>
-          <select class="form-select" id="inputGroupSelect01">
-            <option value="1">Дошкольное</option>
-            <option value="2">Начальное</option>
-            <option value="3" selected>Основное общее</option>
-            <option value="4">Основное специальное</option>
-            <option value="5">Высшее</option>
-          </select>
+          <label class="input-group-text" id="basic-addon1">Год рождения</label>
+          <input type="text" class="form-control" value="" placeholder="1993" aria-label="Annual Income" aria-describedby="basic-addon1">
         </div>
 
         <div class="input-group mt-2">
@@ -113,12 +102,43 @@
           <label class="input-group-text" id="basic-addon1">Зарплата</label>
           <input type="text" class="form-control" id="SalaryInput" value="" placeholder="30000" aria-label="Annual Income" aria-describedby="basic-addon1" onchange="updateTextInput2(this.value);">
         </div>
-<!-- 
-        <div class="SalaryInput mt-1">
-          <text>0</text>
-          <input type="range" class="form-range" id="SalaryInput2" min="0" max="200" onchange="updateTextInput(this.value);">
-          <text>200</text>
-        </div> -->
+
+        <div class="input-group mt-2">
+          <label class="input-group-text" for="inputGroupSelect01">Семейный статус</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option value="1" selected>Холост / Не замужем</option>
+            <option value="2">В браке</option>
+          </select>
+        </div>
+
+        <div class="input-group mt-2">
+          <label class="input-group-text" for="inputGroupSelect01">Категория дохода</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Зарплата</option>
+            <option value="1">Дивиденды</option>
+            <option value="2">Взятки</option>
+            <option value="3">Что-то ещё</option>
+          </select>
+        </div>
+
+        <div class="input-group mt-2">
+          <label class="input-group-text" for="inputGroupSelect01">Уровень образования</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option value="1">Дошкольное</option>
+            <option value="2">Начальное</option>
+            <option value="3" selected>Основное общее</option>
+            <option value="4">Основное специальное</option>
+            <option value="5">Высшее</option>
+          </select>
+        </div>
+
+        <div class="input-group mt-2">
+          <label for="city-choice" class="input-group-text">Город</label>
+          <input list="cities-datalist" class="form-control" id="city-choice" name="city-choice"/>
+          <datalist id="cities-datalist">
+          </datalist>
+        </div>
+
       </div>
     </div>
 
