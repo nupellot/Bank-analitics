@@ -91,6 +91,16 @@ hr {
 input#city-choice {
 	border-radius: 0 5px 5px 0;
 }
+.Yes {
+	color: green;
+}
+.No {
+	color: red;
+}
+table tbody tr:nth-child(1) {
+	/*display: none;*/
+}
+
 
 
 

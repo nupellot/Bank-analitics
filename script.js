@@ -46,7 +46,32 @@ function extendDatalist() {
 }
 extendDatalist();
 
+
+
+function insertResult() {
+    for (let i = 1; i <= 32; i++) {
+        document.querySelector('table tbody tr:nth-child(' + i + ') th').append("Privet");
+    }
+}
+
+// insertResult();
+
 let calculated = false;
+
+function spawnTable() {
+    if (calculated == true) return;
+    calculated = true;
+    let table = document.createElement('table');
+    // ctx.classList.add("firstChart");
+    table.append('thead');
+
+
+    document.querySelector('.placeForTable').append(table);
+}
+
+
+
+
 
 
 function spawnChart() {
