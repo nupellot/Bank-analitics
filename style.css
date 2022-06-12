@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Open+Sans:wght@800&family=Roboto+Mono:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,900&family=Open+Sans:wght@800&family=Roboto+Mono:wght@700&display=swap');
 .btn-outline-primary {
 	width: 50%;
 	border: 3px outset blue;
@@ -67,6 +67,20 @@ div.SalaryInput input {
 div.SalaryInput span {
 	font-weight: 400;
 }
+
+.Analize {
+	display: flex;
+	justify-content: center;
+}
+.Analize button {
+	width: 400px;
+	margin-top: 20px;
+}
+.Analize button {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
 
 
 @keyframes kek {
