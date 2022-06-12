@@ -26,7 +26,12 @@ h3 {
 	height: 500px;
 	border: 3px solid red;
 
-	background: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+	animation-name: kek;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	/*background: linear-gradient(45deg, red, orange, yellow, green, blue, purple);*/
+	/*background-color: red;*/
 }
 .rainbow div {
 	color: white;
@@ -46,4 +51,19 @@ h3 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+@keyframes kek {
+	0% {
+		background-color: cyan;
+	}
+	33% {
+		background-color: lightblue;
+	}
+	66% {
+		background-color: blue;
+	}
+	100% {
+		background-color: cyan;
+	}
 }
