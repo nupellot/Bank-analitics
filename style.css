@@ -7,12 +7,14 @@
 	/*display: none !important;*/
 }
 h1 {
-	display: flex;
-	justify-content: left;
+	font-size: 30px;
 }
 h3 {
-	font-size: 17px;
+	font-size: 23px;
 }
 .input-group label {
 	width: 27%;
+}
+.container-lg {
+	margin-top: 20px;
 }
