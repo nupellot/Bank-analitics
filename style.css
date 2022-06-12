@@ -83,6 +83,9 @@ div.SalaryInput span {
 hr {
 	/*height: 5px;*/
 }
+input#city-choice {
+	border-radius: 0 5px 5px 0;
+}
 
 
 
